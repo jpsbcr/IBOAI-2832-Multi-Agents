@@ -1,0 +1,57 @@
+# testbed.yaml
+devices:
+  PE-1:
+    type: iosxr           # Or 'router' or 'switch', 'iosxr' is specific
+    os: iosxr             # Operating System type
+    connections:
+      cli:
+        protocol: telnet     # How to connect (SSH is standard for XR)
+        ip: 192.168.100.18 # Replace with your device's IP address or hostname
+        port: 52033
+    credentials:
+      default:
+        username: cisco # Replace with your device's username
+        password: cisco # Replace with your device's password
+        # You can also use 'enable_password' if your device requires it for privileged commands
+
+  PE-2:
+    type: iosxr           # Or 'router' or 'switch', 'iosxr' is specific
+    os: iosxr             # Operating System type
+    connections:
+      cli:
+        protocol: telnet     # How to connect (SSH is standard for XR)
+        ip: 192.168.100.18 # Replace with your device's IP address or hostname
+        port: 33137
+    credentials:
+      default:
+        username: cisco # Replace with your device's username
+        password: cisco # Replace with your device's password
+        # You can also use 'enable_password' if your device requires it for privileged commands
+
+  P-1:
+    type: iosxr           # Or 'router' or 'switch', 'iosxr' is specific
+    os: iosxr             # Operating System type
+    connections:
+      cli:
+        protocol: telnet     # How to connect (SSH is standard for XR)
+        ip: 192.168.100.18 # Replace with your device's IP address or hostname
+        port: 50975
+    credentials:
+      default:
+        username: cisco # Replace with your device's username
+        password: cisco # Replace with your device's password
+        # You can also use 'enable_password' if your device requires it for privileged commands
+    
+  P-2:
+    type: iosxr           # Or 'router' or 'switch', 'iosxr' is specific
+    os: iosxr             # Operating System type
+    connections:
+      cli:
+        protocol: telnet     # How to connect (SSH is standard for XR)
+        ip: 192.168.100.18 # Replace with your device's IP address or hostname
+        port: 53325
+    credentials:
+      default:
+        username: cisco # Replace with your device's username
+        password: cisco # Replace with your device's password
+        # You can also use 'enable_password' if your device requires it for privileged commands
